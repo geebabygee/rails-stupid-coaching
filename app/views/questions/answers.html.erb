@@ -1,11 +1,18 @@
 
-<h1>Answers</h1>
 
 
+<div class="container">
+  <h1>Answers</h1>
+<div class="card">
 <p><%= @question %></p>
-<p><%= "-You" %></p>
+<p><i><%="-You" %></i></p>
+</div>
 
-<p><%= @answer %></p>
-<p><%= "-Your Coach" %></p>
+<div class="card">
+<p><strong><%=  @answer %></strong> </p>
+<p><i><%= "-Your Coach" %></i></p>
+</div>
+
 
 <%= link_to("Ask", ask_path) %>
+</div>
